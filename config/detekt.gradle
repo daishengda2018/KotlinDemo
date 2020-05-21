@@ -8,8 +8,16 @@ detekt {
     failFast = true
     // preconfigure defaults
     buildUponDefaultConfig = true
-    //config = files("$projectDir/config/detekt.yml")        // point to your custom config defining rules to run, overwriting default behavior
-    //baseline = file("$projectDir/config/baseline.xml")     // a way of suppressing issues before introducing detekt
+
+    /* point to your custom config defining rules to run, overwriting default behavior
+     * see: https://github.com/detekt/detekt/blob/master/config/detekt/detekt.yml
+     */
+    // config = files("$projectDir/config/detekt.yml")
+
+    /* a way of suppressing issues before introducing detekt
+     * see: https://github.com/detekt/detekt/blob/master/config/detekt/baseline.xml
+     */
+    // baseline = file("$projectDir/config/baseline.xml")     //
 
     reports {
         html.enabled = true // observe findings in your browser with structure and code snippets
