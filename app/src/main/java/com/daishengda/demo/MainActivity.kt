@@ -12,6 +12,6 @@ class MainActivity : AppCompatActivity() {
 
     fun doubleDemo(string: String): Int {
         return 0
-        
+         
     }
 }
