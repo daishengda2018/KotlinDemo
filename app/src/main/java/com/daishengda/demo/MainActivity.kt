@@ -10,8 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun doubleDemo(string: String): Int {
-        return 0
-         
+    fun doubleDemo(string: String): String {
+        return string
     }
 }

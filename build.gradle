@@ -23,6 +23,8 @@ allprojects {
     apply plugin: 'io.gitlab.arturbosch.detekt'
 }
 
+apply from: "./config/detekt.gradle"
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

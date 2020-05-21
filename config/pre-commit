@@ -10,7 +10,7 @@
 # 从git 2.9开始, 可以设置:core.hooksPath了.
 # 可以在repo里面添加一个目录hooks, 然后把git hooks文件放进去track.
 # 在命令行跑:
-# git config core.hooksPath hooks
+# git config core.hooksPath [文件路径]
 # 把找hook文件的目录设置成指定目录就好了.
 
 echo "Running detekt check..."

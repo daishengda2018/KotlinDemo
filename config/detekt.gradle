@@ -4,10 +4,12 @@
 // https://www.cnblogs.com/mengdd/p/kotlin-android-lint-tools-ktlint-detekt.html
 
 detekt {
-    failFast = true // fail build on any finding
-    buildUponDefaultConfig = true // preconfigure defaults
-    config = files("$projectDir/config/detekt.yml") // point to your custom config defining rules to run, overwriting default behavior
-    baseline = file("$projectDir/config/baseline.xml") // a way of suppressing issues before introducing detekt
+    // fail build on any finding
+    failFast = true
+    // preconfigure defaults
+    buildUponDefaultConfig = true
+    //config = files("$projectDir/config/detekt.yml")        // point to your custom config defining rules to run, overwriting default behavior
+    //baseline = file("$projectDir/config/baseline.xml")     // a way of suppressing issues before introducing detekt
 
     reports {
         html.enabled = true // observe findings in your browser with structure and code snippets
